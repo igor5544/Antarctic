@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,64 @@
   <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header header--nojs">
+
+    <div class="header__wrapper container">
+      <a class="header__logo header__logo--nojs" aria-label="Логотип Круизы в антарктику">
+        <svg class="header__logo-ico header__logo-ico--nojs" width="70" height="38">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button class="header__toggle-btn header__toggle-btn--nojs" type="button"
+        aria-label="Открывает/закрывает главное меню">
+        <span class="header__toggle"></span>
+      </button>
+
+      <nav class="header__nav header__nav--nojs main-nav">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#features">
+              Преимущества
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#info">
+              Направления
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#cruises">
+              Ближайшие круизы
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

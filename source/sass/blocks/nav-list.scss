@@ -1,0 +1,46 @@
+.nav-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-list__link {
+  transition: all 0.3s;
+  padding: 15px 0 15px 34px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $text-color--light;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .nav-list__link {
+    padding: 10px 0 10px 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list__link {
+    display: block;
+    padding: 10px 15px 10px 0;
+    color: $text-color--main;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
