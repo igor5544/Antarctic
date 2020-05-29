@@ -7,7 +7,8 @@
 
 .nav-list__link {
   transition: all 0.3s;
-  padding: 15px 0 15px 34px;
+  padding: 15px 0 15px 14px;
+  margin-right: 20px;
   font-weight: 500;
   text-decoration: none;
   color: $text-color--light;
@@ -25,7 +26,7 @@
 
 @media (max-width: $tablet-width) {
   .nav-list__link {
-    padding: 10px 0 10px 24px;
+    padding: 10px 0 10px 4px;
     font-size: 14px;
     line-height: 17px;
   }

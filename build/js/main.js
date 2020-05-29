@@ -72,7 +72,7 @@
 
   function toggleMainMenu() {
     headerElement.classList.toggle('header--menu-active');
-    headerLogoElement.classList.toggle('header__logo--menu-active');;
+    headerLogoElement.classList.toggle('header__logo--menu-active');
     headerToggleElement.classList.toggle('header__toggle-btn--closed');
     headerBurgerElement.classList.toggle('header__toggle--closed');
     headerMenuElement.classList.toggle('header__nav--menu-active');
