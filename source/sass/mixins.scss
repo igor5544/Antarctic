@@ -6,10 +6,11 @@
 
 @mixin main-title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
+  text-align: center;
 }
 
 @mixin main-title--tablet {
@@ -18,9 +19,16 @@
 }
 
 @mixin main-title--mobile {
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   font-size: 24px;
   line-height: 33px;
+}
+
+@mixin main-subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 @mixin main-text {

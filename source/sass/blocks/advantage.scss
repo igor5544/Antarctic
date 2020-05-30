@@ -1,0 +1,96 @@
+.advantage svg {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.advantage {
+  position: relative;
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  padding: 81px 32px 27px 30px;
+  background-color: $background-color--light;
+
+  &--ship svg {
+    width: 27px;
+    height: 32px;
+    top: 30px;
+    left: 30px;
+  }
+
+  &--checks svg {
+    width: 38px;
+    height: 21px;
+  }
+
+  &--boat svg {
+    width: 42px;
+    height: 15px;
+    top: 38px;
+  }
+}
+
+.advantage h3 {
+  @include main-subtitle;
+  margin-bottom: 11px;
+}
+
+.advantage p {
+  @include main-text;
+}
+
+@media (max-width: $tablet-width) {
+  .advantage svg {
+    position: absolute;
+    top: 31px;
+    left: 19px;
+  }
+
+  .advantage {
+    padding: 72px 15px 24px 18px;
+
+    &--ship svg {
+      width: 21px;
+      height: 26px;
+      top: 27px;
+      left: 16px;
+    }
+
+    &--checks svg {
+      width: 33px;
+      height: 19px;
+    }
+
+    &--boat svg {
+      width: 38px;
+      height: 13px;
+      top: 34px;
+      left: 23px;
+    }
+  }
+
+  .advantage br {
+    display: none;
+  }
+
+  .advantage p {
+    padding-right: 1px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantage {
+    max-width: 100%;
+    padding-top: 71px;
+    padding-right: 24px;
+    padding-bottom: 19px;
+  }
+
+  .advantage h3 {
+    max-width: 160px;
+    margin-bottom: 9px;
+  }
+}
