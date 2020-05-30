@@ -1,9 +1,9 @@
 .header {
-  position: relative;
+  position: absolute;
   top: 0;
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: $background-color--dark;
 }
 
 .header__wrapper {
@@ -91,7 +91,7 @@
     border: none;
     transition: all 0.3s;
     cursor: pointer;
-    background-color: $decor-color--main;
+    background-color: transparent;
 
     &:hover {
       opacity: 0.9;

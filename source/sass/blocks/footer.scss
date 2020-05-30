@@ -14,7 +14,7 @@
 }
 
 .footer__nav {
-  flex-basis: 65%;
+  flex-basis: 70%;
   margin-top: 6px;
 }
 
@@ -25,10 +25,12 @@
 .footer__nav-link {
   padding-right: 7px;
   padding-left: 7px;
+  margin-right: 20px;
+  margin-left: 0;
 }
 
 .footer__social {
-  flex-basis: 25%;
+  flex-basis: 20%;
   margin-left: auto;
 }
 
@@ -43,18 +45,10 @@
     margin-right: 17px;
   }
 
-  .footer__nav {
-    flex-basis: 70%;
-  }
-
   .footer__nav-link {
     margin-right: 10px;
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .footer__social {
-    flex-basis: 20%;
   }
 }
 

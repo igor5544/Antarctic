@@ -1,0 +1,102 @@
+.main-block {
+  min-height: 650px;
+  padding: 125px 0;
+  color: $text-color--light;
+  background-image: url("../img/main-bg--desktop@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $background-color--dark;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-block {
+    background-image: url("../img/main-bg--desktop@2x.jpg");
+  }
+}
+
+.main-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 390px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.main-block__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  letter-spacing: 3.75px;
+}
+
+.main-block__text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-block {
+    min-height: 638px;
+    padding: 119px 0;
+    background-image: url("../img/main-bg--tablet@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-block {
+      background-image: url("../img/main-bg--tablet@2x.jpg");
+    }
+  }
+
+  .main-block__wrapper {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .main-block__title {
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 3.55px;
+  }
+
+  .main-block__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-block {
+    min-height: 500px;
+    padding: 103px 0;
+    background-image: url("../img/main-bg--mobile@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-block {
+      background-image: url("../img/main-bg--mobile@2x.jpg");
+    }
+  }
+
+  .main-block__wrapper {
+    min-height: 290px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .main-block__title {
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 2.55px;
+  }
+
+  .main-block__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,15 @@
+.main-title {
+  @include main-title;
+}
+
+@media (max-width: $tablet-width) {
+  .main-title {
+    @include main-title--tablet;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-title {
+    @include main-title--mobile;
+  }
+}
