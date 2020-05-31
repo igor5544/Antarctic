@@ -1,0 +1,129 @@
+.cruise {
+  transition: all 3s;
+  height: 100%;
+  min-height: 386px;
+
+  &:hover div div {
+    padding-top: 28px;
+    background: $background-color--dark;
+  }
+
+  &:hover h3 {
+    position: static;
+  }
+
+  &:hover ul {
+    opacity: 1;
+  }
+
+  &:hover a {
+    opacity: 1;
+  }
+}
+
+.cruise div {
+  position: relative;
+  height: 100%;
+}
+
+.cruise img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cruise div div {
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 33px 25px 35px 25px;
+  background: transparent;
+  z-index: 10;
+}
+
+.cruise ul {
+  @include reset-list;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.cruise li {
+  margin-bottom: 12px;
+}
+
+.cruise h3 {
+  @include main-subtitle;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 23px;
+  left: 32px;
+  right: 32px;
+  color: $text-color--light;
+}
+
+.cruise h4 {
+  @include main-text;
+  margin-bottom: 3px;
+  color: $text-color--light;
+}
+
+.cruise p {
+  @include main-text;
+  color: $text-color--gray;
+}
+
+.cruise a {
+  @include main-btn;
+  max-width: 210px;
+  width: 100%;
+  opacity: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .cruise {
+    &:hover div div {
+      padding-top: 33px;
+    }
+  }
+
+  .cruise div div {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .cruise a {
+    max-width: 239px;
+  }
+
+  .cruise h3 {
+    bottom: 24px;
+    left: 37px;
+    right: 37px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .cruise {
+    &:hover div div {
+      padding-top: 31px;
+    }
+  }
+
+  .cruise div div {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .cruise a {
+    max-width: 220px;
+  }
+
+  .cruise h3 {
+    bottom: 17px;
+    left: 25px;
+    right: 25px;
+  }
+}

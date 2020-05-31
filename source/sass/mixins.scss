@@ -33,6 +33,28 @@
 
 @mixin main-text {
   margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+}
+
+@mixin main-btn {
+  transition: all 0.3s;
+  display: block;
+  padding: 10px;
+  color: $text-color--main;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: $background-color--light;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
