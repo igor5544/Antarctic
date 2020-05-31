@@ -2,6 +2,7 @@
   transition: all 3s;
   height: 100%;
   min-height: 386px;
+  background: $background-color--dark;
 
   &:hover div div {
     padding-top: 28px;
