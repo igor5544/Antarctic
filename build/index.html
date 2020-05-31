@@ -88,12 +88,14 @@
     <section class="main-block">
 
       <div class="main-block__wrapper container">
-        <h1 class="main-block__title">
-          Круизы в&nbsp;Антарктику
-        </h1>
-        <p class="main-block__text">
-          Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
-        </p>
+        <div class="main-block__inner">
+          <h1 class="main-block__title">
+            Круизы в&nbsp;Антарктику
+          </h1>
+          <p class="main-block__text">
+            Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
+          </p>
+        </div>
       </div>
 
     </section>
@@ -671,6 +673,36 @@
 
     </section>
 
+    <section class="reservation">
+
+      <div class="reservation__wrapper container">
+        <div class="reservation__info-wrapper">
+          <h2 class="reservation__title">
+            Раннее бронирование
+          </h2>
+          <p class="reservation__subtitle main-subtitle">
+            Забронируйте тур <span class="reservation__nowrap">за 3-6 месяцев</span> <br>
+            до даты выезда и сэкономьте до 50%
+          </p>
+        </div>
+        <div class="reservation__form-wrapper">
+          <p class="reservation__form-title main-subtitle">
+            Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время
+          </p>
+          <form method="post" class="reservation__form main-form">
+            <input type="text" name="user-name" placeholder="Валерия" required="">
+            <input type="tel" name="user-name" placeholder="89236889975" required="">
+            <input type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" required="">
+            <input type="checkbox" name="user-consent" id="user-consent" required="" checked="">
+            <label for="user-consent">
+              Я согласен на обработку моих персональных данных
+            </label>
+            <button type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
@@ -735,6 +767,7 @@
 
   </footer>
 
+  <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -18,10 +18,15 @@
 .main-block__wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.main-block__inner {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 390px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: 95px;
+  padding-right: 95px;
 }
 
 .main-block__title {
@@ -52,9 +57,9 @@
     }
   }
 
-  .main-block__wrapper {
-    padding-right: 45px;
-    padding-left: 45px;
+  .main-block__inner {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .main-block__title {
@@ -82,10 +87,8 @@
     }
   }
 
-  .main-block__wrapper {
+  .main-block__inner {
     min-height: 290px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 
   .main-block__title {

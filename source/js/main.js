@@ -83,3 +83,61 @@
   }
 
 })();
+
+(function () {
+
+  var mainFormElement = document.querySelector('.main-form');
+  var nameFieldElement = mainFormElement.querySelector('input[type="text"]');
+  var phoneFieldElement = mainFormElement.querySelector('input[type="tel"]');
+  var emailFieldElement = mainFormElement.querySelector('input[type="email"]');
+
+  var isStorageSupport = true;
+  var storageName;
+  var storagePhone;
+  var storageEmail;
+
+  /* $('input[type="tel"]').mask('+7(000) 000-0000'); */
+
+  try {
+    storageName = localStorage.getItem('userName');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  try {
+    storagePhone = localStorage.getItem('userPhone');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  try {
+    storageEmail = localStorage.getItem('userEmail');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  setFormValueFromStoreg();
+
+  mainFormElement.addEventListener('submit', function () {
+    if (isStorageSupport) {
+      localStorage.setItem('userName', nameFieldElement.value);
+      localStorage.setItem('userPhone', phoneFieldElement.value);
+      localStorage.setItem('userEmail', emailFieldElement.value);
+    }
+  });
+
+  function setFormValueFromStoreg() {
+    if (storageName) {
+      nameFieldElement.value = storageName;
+    }
+
+    if (storageEmail) {
+      phoneFieldElement.value = storageEmail;
+    }
+
+    if (storagePhone) {
+      emailFieldElement.value = storagePhone;
+    }
+  }
+
+})();

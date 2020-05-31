@@ -42,6 +42,7 @@
   transition: all 0.3s;
   display: block;
   padding: 10px;
+  border: none;
   color: $text-color--main;
   font-size: 14px;
   line-height: 21px;
@@ -57,4 +58,15 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
