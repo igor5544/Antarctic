@@ -4,6 +4,7 @@
 @import "mixins.scss";
 @import "global.scss";
 @import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/main-logo.scss";
 @import "blocks/main-title.scss";
 @import "blocks/main-subtitle.scss";
@@ -21,5 +22,7 @@
 @import "blocks/cruise.scss";
 @import "blocks/reservation.scss";
 @import "blocks/main-form.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-list.scss";
 @import "blocks/social.scss";
 @import "blocks/footer.scss";
