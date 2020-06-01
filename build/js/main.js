@@ -96,7 +96,7 @@
   var storagePhone;
   var storageEmail;
 
-  /* $('input[type="tel"]').mask('+7(000) 000-0000'); */
+  $('input[type="tel"]').mask('+7 (000) 000-0000');
 
   try {
     storageName = localStorage.getItem('userName');
