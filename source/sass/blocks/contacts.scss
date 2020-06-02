@@ -19,7 +19,10 @@
 }
 
 .contacts__map-img {
-  max-height: 306px;
+  min-height: 306px;
+  width: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
 }
 
 .contacts__map {
@@ -53,7 +56,7 @@
   }
 
   .contacts__map-img {
-    max-height: 335px;
+    min-height: 335px;
   }
 
   .contacts__map {
@@ -85,7 +88,7 @@
   }
 
   .contacts__map-img {
-    max-height: 316px;
+    min-height: 316px;
   }
 
   .contacts__map {

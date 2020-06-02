@@ -23,6 +23,7 @@
     "gulp-webp": "^4.0.1",
     "jquery": "^3.5.1",
     "jquery-mask-plugin": "^1.14.16",
+    "object-fit-images": "^3.2.4",
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",

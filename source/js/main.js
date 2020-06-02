@@ -131,13 +131,18 @@
       nameFieldElement.value = storageName;
     }
 
-    if (storageEmail) {
-      phoneFieldElement.value = storageEmail;
+    if (storagePhone) {
+      phoneFieldElement.value = storagePhone;
     }
 
-    if (storagePhone) {
-      emailFieldElement.value = storagePhone;
+    if (storageEmail) {
+      emailFieldElement.value = storageEmail;
     }
   }
+})();
+
+(function () {
+
+  objectFitImages();
 
 })();

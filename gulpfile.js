@@ -31,6 +31,16 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("cssDefoult", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -60,7 +70,6 @@ gulp.task("images", function() {
     ]))
 
     .pipe(gulp.dest("source/img"));
-
 });
 
 gulp.task("webp", function () {
@@ -85,8 +94,9 @@ gulp.task("jsLibs", function () {
   return gulp.src([
     "node_modules/jquery/dist/jquery.min.js",
     "node_modules/jquery-mask-plugin/dist/jquery.mask.min.js",
+    "node_modules/object-fit-images/dist/ofi.min.js",
   ])
-    .pipe(concat("libs.min.js"))
+    .pipe(concat("vendor.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
@@ -115,5 +125,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "webp", "css", "sprite", "html", 'jsLibs'));
+gulp.task("build", gulp.series("clean", "copy", "webp", "css", "cssDefoult", "sprite", "html", 'jsLibs'));
 gulp.task("start", gulp.series("build", "server"));

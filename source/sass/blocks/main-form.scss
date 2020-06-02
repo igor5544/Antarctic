@@ -1,9 +1,21 @@
+.main-form input:focus,
+.main-form button:focus,
+.main-form input[type="checkbox"]:focus + label::before {
+  outline: none;
+  box-shadow: 0 0 0 2px $focus-color--form;
+}
+
 .main-form input:not([type="checkbox"]) {
   @include main-text;
   display: block;
   width: 100%;
-  padding: 10px 16px 9px;
+  padding: 12px 18px 11px;
+  border: none;
   margin-bottom: 21px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .main-form input[type="checkbox"] + label {
@@ -52,7 +64,12 @@
     opacity: 1;
   }
 
-  &:checked + label:hover::after {
+  &:checked + label:hover {
+    opacity: 0.8;
+  }
+
+  &:checked + label:hover::after,
+  &:checked + label:hover::before {
     opacity: 1;
   }
 
