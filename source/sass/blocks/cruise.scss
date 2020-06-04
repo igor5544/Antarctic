@@ -21,6 +21,12 @@
   }
 }
 
+@media (pointer: coarse) {
+  .cruise {
+    cursor: pointer;
+  }
+}
+
 .cruise div {
   position: relative;
   height: 100%;

@@ -1,8 +1,12 @@
+.main-form input {
+  border-radius: 0;
+}
+
 .main-form input:focus,
 .main-form button:focus,
 .main-form input[type="checkbox"]:focus + label::before {
   outline: none;
-  box-shadow: 0 0 0 2px $focus-color--form;
+  box-shadow: 0 0 0 2px $focus-color--castom;
 }
 
 .main-form input:not([type="checkbox"]) {

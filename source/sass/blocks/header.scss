@@ -112,6 +112,21 @@
     &--nojs {
       display: none;
     }
+
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+
+    &:focus .header__toggle::after,
+    &:focus .header__toggle::before,
+    &:focus .header__toggle {
+      box-shadow: 0 0 0 2px $focus-color--castom;
+    }
+
+    &:focus .header__toggle--closed::after {
+      box-shadow: none;
+    }
   }
 
   .header__toggle {
@@ -126,6 +141,7 @@
 
     &::after,
     &::before {
+      transition: all 0.3s;
       content: "";
       position: absolute;
       right: 0;
