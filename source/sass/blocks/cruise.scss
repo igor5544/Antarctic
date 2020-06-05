@@ -3,20 +3,24 @@
   min-height: 386px;
   background-color: $background-color--dark;
 
-  &:hover div div {
+  &:hover .cruis__info-wrapper,
+  &:active .cruis__info-wrapper {
     background: $background-color--dark;
   }
 
-  &:hover h3 {
+  &:hover h3,
+  &:active h3 {
     order: 0;
     transform: none;
   }
 
-  &:hover ul {
+  &:hover ul,
+  &:active ul {
     opacity: 1;
   }
 
-  &:hover a {
+  &:hover a,
+  &:active a {
     opacity: 1;
   }
 }
@@ -27,7 +31,7 @@
   }
 }
 
-.cruise div {
+.cruis__wrapper {
   position: relative;
   height: 100%;
 }
@@ -45,12 +49,13 @@
   z-index: 1;
 }
 
-.cruise div div {
+.cruis__info-wrapper {
   transition: all 0.3s;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding: 28px 26px 35px 26px;
   background: transparent;
   z-index: 10;
@@ -91,7 +96,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .cruise div div {
+  .cruis__info-wrapper {
     padding-top: 33px;
     padding-right: 36px;
     padding-left: 36px;
@@ -103,7 +108,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .cruise div div {
+  .cruis__info-wrapper {
     padding-top: 31px;
     padding-right: 25px;
     padding-left: 25px;
