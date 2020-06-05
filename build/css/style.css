@@ -1008,16 +1008,20 @@ img {
   height: 100%;
   min-height: 386px;
   background-color: #011c40; }
-  .cruise:active div div {
+  .cruise:hover .cruis__info-wrapper,
+  .cruise:active .cruis__info-wrapper {
     background: #011c40; }
+  .cruise:hover h3,
   .cruise:active h3 {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
     -webkit-transform: none;
             transform: none; }
+  .cruise:hover ul,
   .cruise:active ul {
     opacity: 1; }
+  .cruise:hover a,
   .cruise:active a {
     opacity: 1; }
 
@@ -1025,7 +1029,7 @@ img {
   .cruise {
     cursor: pointer; } }
 
-.cruise div {
+.cruis__wrapper {
   position: relative;
   height: 100%; }
 
@@ -1042,7 +1046,7 @@ img {
   font-family: "object-fit: cover;";
   z-index: 1; }
 
-.cruise div div {
+.cruis__info-wrapper {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
@@ -1056,6 +1060,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
   padding: 28px 26px 35px 26px;
   background: transparent;
   z-index: 10; }
@@ -1119,7 +1124,7 @@ img {
     opacity: 0.6; }
 
 @media (max-width: 1023px) {
-  .cruise div div {
+  .cruis__info-wrapper {
     padding-top: 33px;
     padding-right: 36px;
     padding-left: 36px; }
@@ -1128,7 +1133,7 @@ img {
             transform: translate(2px, 10px); } }
 
 @media (max-width: 767px) {
-  .cruise div div {
+  .cruis__info-wrapper {
     padding-top: 31px;
     padding-right: 25px;
     padding-left: 25px; }
